@@ -1,0 +1,47 @@
+.Header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 10px;
+  border-bottom: 0.5px solid rgba(128, 128, 128, 0.419);
+}
+.Home {
+  display: none;
+}
+.hamburger {
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.hamburger hr {
+  margin: 0;
+  border: 1px solid #218bff;
+  background-color: #218bff;
+  width: 15px;
+  height: 0.8px;
+}
+
+.sparkle,
+.logo {
+  height: 37px;
+  width: 37px;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 800px) {
+  .Header {
+    padding-left: 20px;
+  }
+  .hamburger {
+    display: none;
+  }
+  .Home {
+    display: flex;
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  .logo {
+    display: none;
+  }
+}

@@ -1,0 +1,19 @@
+.MenuContent {
+}
+
+.MenuContent ul {
+  padding: 0;
+}
+.MenuContent li {
+  list-style-type: none;
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  font-size: 1.4rem;
+}
+.profile-img {
+  background-color: #218cff80;
+  border-radius: 100%;
+  height: 40px;
+  width: 40px;
+}
