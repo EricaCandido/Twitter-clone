@@ -35,7 +35,7 @@ const MenuContent = () => {
         </li>
         <li>
           <img
-            class="profile-img"
+            className="profile-img"
             src="https://robohash.org/ERICA CANDIDO.png"
             alt="img-profile"
           />

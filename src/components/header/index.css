@@ -1,9 +1,8 @@
-.Header {
+.Header-up {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding-bottom: 10px;
-  border-bottom: 0.5px solid rgba(128, 128, 128, 0.419);
 }
 .Home {
   display: none;
@@ -28,9 +27,30 @@
   width: 37px;
   cursor: pointer;
 }
+.Header-down {
+  border-bottom: 0.5px solid rgba(128, 128, 128, 0.419);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 1.1rem;
+}
+.per-te,
+.seguiti {
+  display: flex;
+  margin: 0;
+  width: 50%;
+  height: 47px;
+  justify-content: center;
+  align-items: center;
+}
+
+.per-te:hover,
+.seguiti:hover {
+  background-color: rgba(128, 128, 128, 0.419);
+}
 
 @media screen and (min-width: 800px) {
-  .Header {
+  .Header-up {
     padding-left: 20px;
   }
   .hamburger {

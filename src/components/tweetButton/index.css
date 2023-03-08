@@ -1,7 +1,7 @@
 .TweetButton {
   position: fixed;
-  right: 20px;
-  bottom: 100px;
+  right: 80px;
+  bottom: 180px;
 }
 
 .TweetButton button {
@@ -13,6 +13,11 @@
   border: none;
   cursor: pointer;
   font-weight: bold;
+  position: absolute;
+  bottom: -60px;
+}
+.TweetButton button:hover {
+  background-color: #2774c6;
 }
 .TweetButton img {
   height: 25px;

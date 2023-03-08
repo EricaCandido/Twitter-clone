@@ -1,0 +1,10 @@
+.TrendsList {
+  background-color: rgba(228, 239, 248, 0.465);
+  min-width: 90%;
+  height: fit-content;
+  border-radius: 12px;
+}
+
+.trends-title {
+  padding-left: 20px;
+}

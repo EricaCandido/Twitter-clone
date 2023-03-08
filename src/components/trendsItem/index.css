@@ -1,0 +1,22 @@
+.TrendsItem {
+  padding: 0 0 20px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  cursor: pointer;
+  min-width: 90%;
+}
+.TrendsItem:hover {
+  background: rgba(217, 227, 235, 0.465);
+}
+
+.tag,
+.tweets {
+  margin: 0;
+  color: rgba(83, 83, 83, 0.89);
+}
+
+.hash {
+  margin: 0;
+  font-weight: bold;
+}

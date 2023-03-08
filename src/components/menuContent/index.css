@@ -1,6 +1,3 @@
-.MenuContent {
-}
-
 .MenuContent ul {
   padding: 0;
 }
@@ -10,6 +7,10 @@
   gap: 5px;
   align-items: center;
   font-size: 1.4rem;
+  cursor: pointer;
+}
+.MenuContent li:hover {
+  color: #218bff;
 }
 .profile-img {
   background-color: #218cff80;
