@@ -1,8 +1,12 @@
+.Header {
+  position: sticky;
+  top: 0;
+  background-color: white;
+}
 .Header-up {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-bottom: 10px;
 }
 .Home {
   display: none;
@@ -33,6 +37,8 @@
   justify-content: space-around;
   align-items: center;
   font-size: 1.1rem;
+  cursor: pointer;
+  position: relative;
 }
 .per-te,
 .seguiti {
@@ -49,7 +55,26 @@
   background-color: rgba(128, 128, 128, 0.419);
 }
 
+.bookMark {
+  position: absolute;
+  width: 10%;
+  height: 5px;
+  background-color: #218bff;
+  bottom: 0px;
+  left: 20%;
+}
+.bookMark.bm {
+  left: 70%;
+}
+
+.post-input {
+  display: none;
+}
+
 @media screen and (min-width: 800px) {
+  .Header {
+    position: inherit;
+  }
   .Header-up {
     padding-left: 20px;
   }
@@ -63,5 +88,50 @@
   }
   .logo {
     display: none;
+  }
+  .post-input {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+  .first-row {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    padding-top: 20px;
+
+    height: 90px;
+  }
+  .first-row input {
+    border: none;
+    font-size: 1.1rem;
+  }
+
+  .second-row {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 0;
+    border-top: 0.5px solid rgba(181, 181, 181, 0.419);
+    border-bottom: 0.5px solid rgba(181, 181, 181, 0.419);
+  }
+  .post-icons {
+    font-size: 1.1rem;
+    color: #218bff;
+    display: flex;
+    gap: 20px;
+  }
+  .header-twit-btn {
+    background-color: #218bff;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    width: 80px;
+    height: 35px;
+    border-radius: 24px;
+  }
+  .header-twit-btn:hover {
+    background-color: #2774c6;
+    color: white;
   }
 }

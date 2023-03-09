@@ -1,9 +1,14 @@
 import "./index.css";
-import { messageList } from "../../mocks/messageList";
+import { AiOutlineHeart, AiOutlineRetweet, AiFillHeart } from "react-icons/ai";
+import { FaRegComment } from "react-icons/fa";
+import { FiUpload } from "react-icons/fi";
 import { useState } from "react";
 
 const MessageItem = ({ userData }) => {
-  const [counter, setCounter] = useState(-1);
+  const [isLike, setIsLike] = useState(true);
+  const onHandleLike = () => {
+    setIsLike((prev) => !prev);
+  };
 
   return (
     <div className="MessageItem">
@@ -17,22 +22,15 @@ const MessageItem = ({ userData }) => {
         <span className="email">{`@${userData.username}`}</span>
         <p className="tweet">{userData.message}</p>
         <div className="reactions">
-          <img
-            src="https://img.icons8.com/ios/256/speech-bubble.png"
-            alt="comment-icon"
-          />
-          <img
-            src="https://img.icons8.com/material-rounded/256/retweet.png"
-            alt="retweet-icon"
-          />
-          <img
-            src="https://img.icons8.com/material-outlined/256/hearts.png"
-            alt="like-icon"
-          />
-          <img
-            src="https://img.icons8.com/ios/256/upload.png"
-            alt="upload-icon"
-          />
+          <FaRegComment className="comment" />
+          <AiOutlineRetweet className="retweet" />
+          {isLike ? (
+            <AiOutlineHeart className="like" onClick={onHandleLike} />
+          ) : (
+            <AiFillHeart className="like-fill" onClick={onHandleLike} />
+          )}
+
+          <FiUpload className="upload" />
         </div>
       </div>
     </div>

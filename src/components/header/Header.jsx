@@ -1,6 +1,11 @@
 import "./index.css";
 import { useState } from "react";
 import HamburgerMenu from "../hamburgerMenu/HamburgerMenu";
+import { BsImage, BsEmojiSmile } from "react-icons/bs";
+import { AiOutlineFileGif, AiTwotoneCalendar } from "react-icons/ai";
+import { TfiList } from "react-icons/tfi";
+import { FiMapPin } from "react-icons/fi";
+
 const Header = () => {
   const [showMenu, setShowMenu] = useState(false);
   const menuTrigger = () => {
@@ -8,10 +13,9 @@ const Header = () => {
     console.log(showMenu);
   };
 
-  const [showBookMark, setShowBookMark] = useState(false);
-  const onHandlePerTe = () => {
+  const [showBookMark, setShowBookMark] = useState(true);
+  const bookMarkTrigger = () => {
     setShowBookMark(!showBookMark);
-    console.log(showBookMark);
   };
 
   return (
@@ -36,10 +40,39 @@ const Header = () => {
         />
       </div>
       <div className="Header-down">
-        <p className="per-te" onClick={onHandlePerTe}>
+        <p className="per-te" onClick={bookMarkTrigger}>
           Per te
         </p>
-        <p className="seguiti">Seguiti</p>
+
+        {
+          <div
+            className={`bookMark  ${showBookMark == false ? "bm" : ""}`}
+          ></div>
+        }
+        <p onClick={bookMarkTrigger} className={`seguiti`}>
+          Seguiti
+        </p>
+      </div>
+      <div className="post-input">
+        <section className="first-row">
+          <img
+            className="profile-img"
+            src="https://robohash.org/ERICA CANDIDO.png"
+            alt="img-profile"
+          />
+          <input type="text" placeholder="What's up?" required />
+        </section>
+        <section className="second-row">
+          <div className="post-icons">
+            <BsImage />
+            <AiOutlineFileGif />
+            <TfiList />
+            <BsEmojiSmile />
+            <AiTwotoneCalendar />
+            <FiMapPin />
+          </div>
+          <button className="header-twit-btn">Twit</button>
+        </section>
       </div>
     </div>
   );

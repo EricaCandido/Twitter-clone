@@ -8,11 +8,18 @@
 
 @media screen and (min-width: 800px) {
   .SideMenu {
+    position: relative;
+    /* position: fixed; */
+    left: 0;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    padding: 0 50px;
-    width: 300px;
+    padding: 20px 50px;
+    /* width: 25%; */
     border-right: 0.5px solid rgba(128, 128, 128, 0.549);
+  }
+  .tweetBtn-side {
+    width: 160px;
+    border-radius: 30px;
   }
 }
