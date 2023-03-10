@@ -3,11 +3,11 @@ import Header from "../header/Header";
 import MessageList from "../messageList/MessageList";
 import TweetButton from "../tweetButton/TweetButton";
 
-const Content = () => {
+const Content = ({ setModalVisibility }) => {
   return (
     <div className="Content">
       <Header />
-      <MessageList />
+      <MessageList setModalVisibility={setModalVisibility} />
       <TweetButton />
     </div>
   );

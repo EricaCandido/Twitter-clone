@@ -5,8 +5,10 @@
 @media screen and (min-width: 800px) {
   .SideTrends {
     display: flex;
+    flex-direction: column;
     width: 40%;
+    height: fit-content;
     padding: 20px;
-    justify-content: center;
+    gap: 20px;
   }
 }

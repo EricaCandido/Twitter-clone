@@ -3,7 +3,7 @@ import MessageItem from "../messageItem/MessageItem";
 import { useEffect, useState } from "react";
 import messageList from "../../mocks/messageList";
 
-const MessageList = () => {
+const MessageList = ({ setModalVisibility }) => {
   const [userData, setUserData] = useState([]);
 
   useEffect(() => {
@@ -24,7 +24,11 @@ const MessageList = () => {
   return (
     <div className="MessageList">
       {userData.map((user) => (
-        <MessageItem userData={user} key={user.id} />
+        <MessageItem
+          setModalVisibility={setModalVisibility}
+          userData={user}
+          key={user.id}
+        />
       ))}
     </div>
   );

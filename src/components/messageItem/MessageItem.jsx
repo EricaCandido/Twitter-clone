@@ -4,11 +4,17 @@ import { FaRegComment } from "react-icons/fa";
 import { FiUpload } from "react-icons/fi";
 import { useState } from "react";
 
-const MessageItem = ({ userData }) => {
+const MessageItem = ({ userData, setModalVisibility }) => {
   const [isLike, setIsLike] = useState(true);
   const onHandleLike = () => {
     setIsLike((prev) => !prev);
   };
+
+  const onHandleUpload = () => {
+    setModalVisibility(true);
+    console.log("mi hai toccato");
+  };
+  //TODO: open a modal
 
   return (
     <div className="MessageItem">
@@ -30,7 +36,7 @@ const MessageItem = ({ userData }) => {
             <AiFillHeart className="like-fill" onClick={onHandleLike} />
           )}
 
-          <FiUpload className="upload" />
+          <FiUpload onClick={onHandleUpload} className="upload" />
         </div>
       </div>
     </div>

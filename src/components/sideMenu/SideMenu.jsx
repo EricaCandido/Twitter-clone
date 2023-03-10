@@ -8,7 +8,6 @@ const SideMenu = () => {
     <div className="SideMenu">
       <IoLogoTwitter className="logo-twitter" />
       <MenuContent />
-      <TweetButton className="tweetBtn-side" />
     </div>
   );
 };

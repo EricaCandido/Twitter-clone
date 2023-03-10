@@ -4,14 +4,20 @@ import SideMenu from "./components/sideMenu/SideMenu";
 import Content from "./components/content/Content";
 import SideTrends from "./components/sideTrends/SideTrends";
 import Footer from "./components/footer/Footer";
+import ModalUpload from "./components/modalUpload";
 
 function App() {
+  const [modalVisibility, setModalVisibility] = useState(false);
+
   return (
     <div className="App">
       <SideMenu />
-      <Content />
+      <Content setModalVisibility={setModalVisibility} />
       <SideTrends />
       <Footer />
+      {modalVisibility && (
+        <ModalUpload setModalVisibility={setModalVisibility} />
+      )}
     </div>
   );
 }

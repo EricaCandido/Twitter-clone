@@ -1,0 +1,22 @@
+.Search {
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  min-width: 90%;
+  border-radius: 20px;
+  padding: 10px;
+  border: 0.5px solid rgb(117, 179, 208);
+  box-shadow: 0 0 2px rgb(117, 179, 208);
+}
+
+.Search input {
+  width: 80%;
+  border: none;
+}
+
+.search-icon {
+  position: absolute;
+  top: 18%;
+  left: 4%;
+  font-size: 1.5rem;
+}

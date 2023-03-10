@@ -1,0 +1,38 @@
+.ModalUpload {
+  position: fixed;
+  right: 0;
+  top: 20px;
+  width: 300px;
+  height: fit-content;
+  background-color: #218bff;
+  padding: 10px;
+  border-radius: 12px;
+}
+.formTitle {
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+.ModalUpload form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.ModalUpload input {
+  width: 80%;
+  border: none;
+  border-radius: 12px;
+  padding: 5px;
+  cursor: pointer;
+}
+.uploadBtn:hover {
+  background-color: rgba(195, 225, 252, 0.777);
+}
+.modalClosure {
+  position: absolute;
+  top: 5%;
+  left: 91%;
+  cursor: pointer;
+}
