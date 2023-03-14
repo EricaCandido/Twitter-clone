@@ -6,20 +6,16 @@
   font-size: 2rem;
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 540px) {
   .SideMenu {
-    position: relative;
-    /* position: fixed; */
+    position: fixed;
     left: 0;
+    width: fit-content;
+    height: 100vh;
+    padding: 20px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    padding: 20px 50px;
-    /* width: 25%; */
     border-right: 0.5px solid rgba(128, 128, 128, 0.549);
-  }
-  .tweetBtn-side {
-    width: 160px;
-    border-radius: 30px;
   }
 }

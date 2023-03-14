@@ -26,7 +26,9 @@ const MessageItem = ({ userData, setModalVisibility }) => {
       <div className="text-container">
         <span className="userName">{`${userData.firstName} ${userData.lastName}`}</span>
         <span className="email">{`@${userData.username}`}</span>
+
         <p className="tweet">{userData.message}</p>
+
         <div className="reactions">
           <FaRegComment className="comment" />
           <AiOutlineRetweet className="retweet" />

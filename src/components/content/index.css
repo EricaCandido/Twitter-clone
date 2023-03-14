@@ -2,3 +2,15 @@
   width: 100%;
   padding: 20px;
 }
+
+@media screen and (min-width: 540px) {
+  .Content {
+    padding-left: 16%;
+  }
+}
+
+@media screen and (min-width: 913px) {
+  .Content {
+    padding-left: 25%;
+  }
+}

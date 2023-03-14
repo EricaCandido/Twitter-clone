@@ -16,7 +16,7 @@
   cursor: pointer;
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 540px) {
   .Footer {
     display: none;
   }

@@ -25,17 +25,27 @@
 .plus {
   margin: 0;
 }
-
-@media screen and (min-width: 800px) {
+@media screen and (width: 540px) {
   .TweetButton {
-    position: absolute;
-    left: 38px;
-    bottom: 80px;
+    left: 20px;
+    top: 60%;
+  }
+}
+@media screen and (min-width: 541px) and (max-width: 912px) {
+  .TweetButton {
+    left: 20px;
+    top: 44%;
+    top: 80%;
+  }
+}
+@media screen and (min-width: 913px) {
+  .TweetButton {
+    left: 2px;
+    top: 90%;
   }
 
   .TweetButton button {
     width: 210px;
-
     border-radius: 30px;
   }
 }

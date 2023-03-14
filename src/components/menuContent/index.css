@@ -22,3 +22,15 @@
 p {
   margin: 12px;
 }
+
+@media screen and (min-width: 540px) and (max-width: 913px) {
+  .MenuContent p {
+    display: none;
+  }
+  .MenuContent ul {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+  }
+}

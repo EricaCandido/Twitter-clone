@@ -11,27 +11,27 @@ const MenuContent = () => {
     <div className="MenuContent">
       <ul>
         <li>
-          <AiOutlineHome />
+          <AiOutlineHome className="menuContent-icon" />
           <p>Home</p>
         </li>
         <li>
-          <BiHash />
+          <BiHash className="menuContent-icon" />
           <p>Explore</p>
         </li>
         <li>
-          <AiOutlineBell />
+          <AiOutlineBell className="menuContent-icon" />
           <p>Notifications</p>
         </li>
         <li>
-          <BiEnvelope />
+          <BiEnvelope className="menuContent-icon" />
           <p>Messagges</p>
         </li>
         <li>
-          <BsBookmark />
+          <BsBookmark className="menuContent-icon" />
           <p>Bookmarks</p>
         </li>
         <li>
-          <CiViewList /> <p>Lists</p>
+          <CiViewList className="menuContent-icon" /> <p>Lists</p>
         </li>
         <li>
           <img
@@ -42,7 +42,7 @@ const MenuContent = () => {
           <p>Profile</p>
         </li>
         <li>
-          <BsThreeDots />
+          <BsThreeDots className="menuContent-icon" />
           <p>More</p>
         </li>
       </ul>

@@ -1,0 +1,53 @@
+.Post {
+  display: none;
+}
+@media screen and (min-width: 700px) {
+  .Post {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+  .first-row {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    padding-top: 20px;
+
+    height: 90px;
+  }
+  .first-row input {
+    border: none;
+    font-size: 1.1rem;
+  }
+
+  .second-row {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 0;
+    border-top: 0.5px solid rgba(181, 181, 181, 0.419);
+    border-bottom: 0.5px solid rgba(181, 181, 181, 0.419);
+  }
+  .post-icons {
+    font-size: 1.1rem;
+    color: #218bff;
+    display: flex;
+    gap: 20px;
+    cursor: pointer;
+  }
+  .header-twit-btn {
+    color: white;
+    background-color: #218bff;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    width: 80px;
+    height: 35px;
+    border-radius: 24px;
+    text-align: center;
+  }
+  .header-twit-btn:hover {
+    background-color: #2774c6;
+    color: white;
+  }
+}
