@@ -7,3 +7,5 @@ Progettino realizzato con Vite 🤩
 👩‍💻 Linguaggio di programmazione: JSX
 
 🖼️ Framework: React
+
+<img src="./view.png" alt="anteprima" width="500px"/>
