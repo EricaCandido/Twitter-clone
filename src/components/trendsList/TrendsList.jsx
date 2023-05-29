@@ -1,15 +1,6 @@
 import "./index.css";
-import { useState, useEffect } from "react";
 import TrendsItem from "../trendsItem/TrendsItem";
-const TrendsList = () => {
-  const [trendsList, setTrendsList] = useState([]);
-
-  useEffect(() => {
-    fetch("https://dummyjson.com/posts?limit=10")
-      .then((res) => res.json())
-      .then((data) => setTrendsList(data.posts));
-  }, []);
-
+const TrendsList = ({ trendsList }) => {
   return (
     <div className="TrendsList">
       <h3 className="trends-title">Tendenze per te</h3>

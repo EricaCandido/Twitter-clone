@@ -6,16 +6,21 @@
   font-size: 2rem;
 }
 
-@media screen and (min-width: 540px) {
+@media screen and (min-width: 760px) {
   .SideMenu {
     position: fixed;
     left: 0;
-    width: fit-content;
+
     height: 100vh;
     padding: 20px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    border-right: 0.5px solid rgba(128, 128, 128, 0.549);
+    border-right: 0.5px solid rgba(201, 211, 219, 0.492);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .SideMenu {
+    padding-left: 150px;
   }
 }

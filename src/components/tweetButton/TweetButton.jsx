@@ -13,9 +13,11 @@ const TweetButton = () => {
       <button onClick={() => console.log(tweetButtonRef.current)}>
         <p className="plus">+</p>
         <img
+          className="tweet_icon"
           src="https://img.icons8.com/material-rounded/256/quill-pen.png"
           alt="ink-icon"
         />
+        <p className="literal_tweet">Tweet</p>
       </button>
     </div>
   );

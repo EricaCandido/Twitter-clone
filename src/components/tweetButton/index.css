@@ -1,7 +1,7 @@
 .TweetButton {
-  position: fixed;
-  right: 5%;
-  bottom: 15%;
+  /* position: fixed; */
+  /* right: 5%;
+  bottom: 15%; */
 }
 .TweetButton button {
   border-radius: 100%;
@@ -13,6 +13,9 @@
   cursor: pointer;
   font-weight: bold;
   height: 45px;
+}
+.literal_tweet {
+  display: none;
 }
 
 .TweetButton button:hover {
@@ -31,21 +34,30 @@
     top: 60%;
   }
 }
-@media screen and (min-width: 541px) and (max-width: 912px) {
+@media screen and (max-width: 760px) {
   .TweetButton {
     left: 20px;
     top: 44%;
     top: 80%;
   }
 }
-@media screen and (min-width: 913px) {
-  .TweetButton {
+@media screen and (min-width: 1200px) {
+  /* .TweetButton {
     left: 2px;
     top: 90%;
-  }
+  } */
 
   .TweetButton button {
     width: 210px;
     border-radius: 30px;
+  }
+  .tweet_icon,
+  .plus {
+    display: none;
+  }
+  .literal_tweet {
+    display: block;
+    color: white;
+    font-size: 1.1rem;
   }
 }

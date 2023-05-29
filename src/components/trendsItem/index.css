@@ -5,6 +5,7 @@
   gap: 3px;
   cursor: pointer;
   min-width: 90%;
+  padding: 20px;
 }
 .TrendsItem:hover {
   background: rgba(217, 227, 235, 0.465);

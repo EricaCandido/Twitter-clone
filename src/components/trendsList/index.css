@@ -1,8 +1,8 @@
 .TrendsList {
-  background-color: rgba(228, 239, 248, 0.465);
+  background-color: rgb(239, 243, 244);
   min-width: 90%;
   height: fit-content;
-  border-radius: 12px;
+  border-radius: 18px;
 }
 
 .trends-title {

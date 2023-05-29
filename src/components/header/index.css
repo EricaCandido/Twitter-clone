@@ -1,8 +1,10 @@
 .Header {
-  position: sticky;
+  position: fixed;
   top: 0;
-
+  width: 100%;
   background-color: rgba(255, 255, 255, 0.821);
+  backdrop-filter: blur(8px);
+  z-index: 2;
 }
 .Header-up {
   display: flex;
@@ -18,6 +20,7 @@
   display: flex;
   flex-direction: column;
   gap: 4px;
+  padding: 20px;
 }
 .hamburger hr {
   margin: 0;
@@ -27,14 +30,14 @@
   height: 0.8px;
 }
 
-.sparkle,
+/* .sparkle, */
 .logo {
   height: 37px;
   width: 37px;
   cursor: pointer;
 }
 .Header-down {
-  border-bottom: 0.5px solid rgba(128, 128, 128, 0.419);
+  border-bottom: 0.5px solid rgba(201, 211, 219, 0.492);
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -69,59 +72,7 @@
   left: 70%;
 }
 
-/* .post-input {
-  display: none;
-}
-@media screen and (min-width: 700px) {
-  .post-input {
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-  }
-  .first-row {
-    display: flex;
-    align-items: flex-start;
-    gap: 20px;
-    padding-top: 20px;
-
-    height: 90px;
-  }
-  .first-row input {
-    border: none;
-    font-size: 1.1rem;
-  }
-
-  .second-row {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    padding: 10px 0;
-    border-top: 0.5px solid rgba(181, 181, 181, 0.419);
-    border-bottom: 0.5px solid rgba(181, 181, 181, 0.419);
-  }
-  .post-icons {
-    font-size: 1.1rem;
-    color: #218bff;
-    display: flex;
-    gap: 20px;
-  }
-  .header-twit-btn {
-    color: white;
-    background-color: #218bff;
-    border: none;
-    cursor: pointer;
-    font-weight: bold;
-    width: 80px;
-    height: 35px;
-    border-radius: 24px;
-    text-align: center;
-  }
-  .header-twit-btn:hover {
-    background-color: #2774c6;
-    color: white;
-  }
-} */
-@media screen and (min-width: 540px) {
+@media screen and (min-width: 760px) {
   .hamburger {
     display: none;
   }
@@ -134,8 +85,11 @@
     display: none;
   }
 }
-@media screen and (min-width: 800px) {
-  .Header-up {
-    padding-left: 20px;
+@media screen and (min-width: 1200px) {
+  .Header {
+    width: 45%;
+  }
+  .Home {
+    font-size: 1.2rem;
   }
 }

@@ -2,13 +2,13 @@
   display: none;
 }
 
-@media screen and (min-width: 990px) {
+@media screen and (min-width: 1200px) {
   .SideTrends {
     display: flex;
     flex-direction: column;
-    width: 40%;
     height: fit-content;
-    padding: 20px;
+    padding: 5px 130px 30px 20px;
     gap: 20px;
+    z-index: 3;
   }
 }

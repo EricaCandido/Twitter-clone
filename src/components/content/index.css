@@ -1,16 +1,15 @@
 .Content {
-  width: 100%;
-  padding: 20px;
 }
 
-@media screen and (min-width: 540px) {
+@media screen and (min-width: 760px) {
   .Content {
-    padding-left: 16%;
+    padding-left: 100px;
+    border-right: 0.5px solid rgba(201, 211, 219, 0.492);
   }
 }
 
-@media screen and (min-width: 913px) {
+@media screen and (min-width: 1200px) {
   .Content {
-    padding-left: 25%;
+    padding-left: 28%;
   }
 }

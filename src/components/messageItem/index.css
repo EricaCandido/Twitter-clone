@@ -3,7 +3,7 @@
   gap: 15px;
   align-items: flex-start;
   padding: 30px 0px 10px 0px;
-  border-bottom: 1px solid rgba(128, 128, 128, 0.548);
+  border-bottom: 1px solid rgba(201, 211, 219, 0.492);
 }
 
 .profile-pic {
@@ -11,9 +11,7 @@
   border-radius: 100%;
   background-color: #b6e3ff;
 }
-.text-container {
-  width: 100%;
-}
+
 .userName {
   font-size: 1rem;
   font-weight: bold;
@@ -42,4 +40,5 @@
 .like-fill {
   fill: rgb(162, 15, 15);
   font-size: 1.3rem;
+  cursor: pointer;
 }

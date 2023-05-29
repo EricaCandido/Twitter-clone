@@ -17,14 +17,16 @@ const Post = () => {
       </section>
       <section className="second-row">
         <div className="post-icons">
-          <BsImage />
-          <AiOutlineFileGif />
-          <TfiList />
-          <BsEmojiSmile />
-          <AiTwotoneCalendar />
-          <FiMapPin />
+          <BsImage className="single_icon" />
+
+          <AiOutlineFileGif className="single_icon" />
+          <TfiList className="single_icon" />
+          <BsEmojiSmile className="single_icon" />
+          <AiTwotoneCalendar className="single_icon" />
+          <FiMapPin className="single_icon" />
         </div>
-        <button className="header-twit-btn">Twit</button>
+
+        <button className="header-twit-btn">Tweet</button>
       </section>
     </div>
   );
