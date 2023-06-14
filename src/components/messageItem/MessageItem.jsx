@@ -53,7 +53,10 @@ const MessageItem = ({
               <AiFillHeart className="like-fill" onClick={onHandleLike} />
             )}
 
-            <FiUpload onClick={onHandleUpload} className="upload" />
+            <FiUpload
+              //  onClick={onHandleUpload}
+              className="upload"
+            />
           </div>
         </div>
       </div>
